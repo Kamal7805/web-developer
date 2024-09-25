@@ -1,0 +1,54 @@
+
+//Change the content using javascript
+
+<p id="para">
+Is there Kamal
+</p>
+<script>
+var paraOne= document.getElementById("para")
+cosole.log(paraOne.textContent)
+paraOne.textcontent="No One Here"
+</script>
+
+
+//chang the content using on button click
+<h1 id="header">Hello World</h1>
+<button onClick="change"></button>
+<script>
+var header1=document.getElementById("header");
+console.log(header1.textContent);
+
+function change(){
+header1.textContent="Hi";
+}
+
+</script>
+//Adding two input values  using button click
+
+<input id="text1" ></input>
+<input id="text2" ></input>
+<button onClick="resultfunction()">Add</button>
+<p id="result">Results</p>
+
+ 
+<script>
+
+//select input box and result
+
+	var box1="document.getElementById("text1");
+	var box2="document.getElementById("text2");
+	var result="document.getElementById("result")
+	
+function resultfunction(){
+		var box1Value=Number(box1.value);
+		var box2Value=Number(box2.value);
+		var total=box1value+box2Value;
+	result.textContent=total
+}
+
+</script>
+
+
+
+
+

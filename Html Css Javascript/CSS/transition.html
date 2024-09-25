@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trasition</title>
+<style>
+#box {
+width:150px;
+background-color:orangered;
+height:150px;
+}
+
+#box:hover{
+width:250px;
+height:250px;
+transition-property:width,height,background-color;    /*  to select all multiple property 	transition-property:all */
+transition-duration:1s,2s,0.5s; /*   	transition-duration:2s */
+   
+background-color:olivedrab;	/*  transition:width,height,background-color 1s,2s,0.5s;	shorthand property*/
+}
+#box1{
+margin-top:150px;
+width:150px;
+background-color:orangered;
+height:150px;
+transition:all 2s;
+transition-delay:2s;
+/*transition: all 1s-smooth 2s-this is for delay ease;*/ /*ease-slowly start ,fast end*/  /*linear -same speed transition*/
+}
+#box1:hover{
+width:250px;
+height:250px;
+ background-color:olivedrab;
+}
+</style>
+</head>
+<body>
+<div id="box">
+</div>
+
+<div id="box1">
+</div>
+
+</body>
+</html>

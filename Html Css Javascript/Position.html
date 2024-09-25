@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Position in CSS</title>
+<style>
+.static{
+	background-color:black;
+	height:150px;
+	width:150px;
+	position : static;
+	left:200px;  <!-- It cannot move form this Position  and its default Position-->
+}
+.relative{
+	background-color:red;
+	width: 150px;
+	height: 150px;
+	position : relative;
+	top:50px;
+	left: 50px;
+	z-index:1;  <!--The value of z-index which is high that will occupy the space of element -->
+}
+.absolute{
+	background-color:yellow;
+	width: 150px;
+	height: 150px;
+	Position: relative;
+	z-index:2;
+}
+
+
+
+</style>
+</head>
+<body>
+<!--CSS 'Position' property controls the placement of elements in web page
+		1.	static :   Default; follows the normal document flow 
+		2.	relative : Positioned relative to its normal Position
+		3.	abosulte : postioned relative to its nearest positioned ancestor
+		4.	fixed :    positioned relative to the viewport, remains fixed during scrolling
+		5.	sticky :   The position sticky is hybrid between relative and fixed 
+		-->
+<div class="static">
+
+	
+</div>
+<div class="relative">
+
+
+</div>	
+<div class="absolute">
+
+
+</div>	
+
+</body>
+</html>
