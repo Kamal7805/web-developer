@@ -1,0 +1,67 @@
+body{
+  margin:0;
+  padding:0;  
+    background-image:url(11.jpg);
+    background-size:cover;
+    font-family:tahoma , sans-serif;
+}
+.formarea
+{
+	position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:500px;
+    width:400px;
+    box-sizing: border-box;
+    background: rgba(0, 0,0,0.1);
+    padding:40px;
+}
+h3
+{
+color:#ffffff;
+font-weight:bold;
+margin:0;
+padding:0 0 20px;
+
+}
+.formarea p
+{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	color:#ffffff;
+}
+.formarea input
+{
+	margin-bottom:20px;
+	width:100%;
+}
+.formarea input[type=text],[type=email],[type=Password] 
+{
+    border:none;
+    border-bottom:1px solid #ffffff;
+    background-color:transparent;
+    outline:none;
+    height:40px;
+    color:#ffffff;
+    display:16px;
+}
+::placeholder
+{
+color:#ffffff;	
+}.formarea input[type=submit]
+{
+	border:none;
+	height:40px;
+	outline:none;
+color:#ffffff;
+font-size:15px;
+background-color:tomato;
+cursor:pointer;
+border-radius:20px;
+}
+.formarea input[type=submit]:hover{
+	background-color:cyan;
+color:#ffffff;
+}
